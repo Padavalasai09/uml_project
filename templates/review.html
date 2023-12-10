@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Reviews</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <style>
+       
+        
+        .product-img {
+            max-width: 100%;
+            height: auto;
+        }
+        .review-card {
+            border: 1px solid #b9b6b6;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .review-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+        }
+        .star-rating {
+            font-size: 1.5em;
+            color: #FFD700;
+            cursor: pointer;
+        }
+        .star-rating:hover {
+            color: #FFA500;
+        }
+        .selected {
+            color: #FFA500;
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Product Reviews</h1>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h2>Product Name: samsung s14</h2>
+                <p></p>
+                <p>Price: $587.09</p>
+              <!--  <img src="C:\Users\TUF\OneDrive\Pictures\1609417280_SamsungGalaxyS20Ultra.jpg" alt="Product Image" class="product-img">-->
+            </div>
+            <div class="col-md-6">
+                <h2>Contact Information</h2>
+                <p>Email: sainaidu@gmail.com</p>
+                <a href="mailto:sainaidu@gmail.com">Send Email</a>
+                <a href="tel:8519960659">Call Us</a>
+                <p>Phone: 8519960659</p>
+            </div>
+        </div>
+
+      
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h2>User Reviews</h2>
+               
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <img src="{{ u1 }}" alt="User Avatar" class="review-avatar">
+                        <h3>Paila Teja</h3>
+                    </div>
+                    <p>Rating: 5/5</p>
+                    <p>Review: Excellent product. Highly recommended!</p>
+                    <a href="mailto:johndoe@gmail.com">Send Email</a>
+                    <a href="tel:+1234567890">Call Us</a>
+
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <img src="{{ u2 }}" alt="User Avatar" class="review-avatar">
+                        <h3>Jawahar Naidu</h3>
+                    </div>
+                    <p>Rating: 4/5</p>
+                    <p>Review: Good product, but could be improved.</p>
+                    <a href="mailto:janesmith@gmail.com">Send Email</a>
+                    <a href="tel:7382443887">Call Us</a>
+                    <a href="reviews2.html">chat with the custommer</a>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <img src="{{ u3 }}" alt="User Avatar" class="review-avatar">
+                        <h3>Tagore</h3>
+                    </div>
+                    <p>Rating: 4/5</p>
+                    <p>Review: Great phone, but battery life could be better.</p>
+                    <a href="mailto:maryjohnson@gmail.com">Send Email</a>
+                    <a href="tel:+9876543210">Call Us</a>
+                </div>
+                
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <img src="{{ u4 }}" alt="User Avatar" class="review-avatar">
+                        <h3>Officer_Chetan</h3>
+                    </div>
+                    <p>Rating: 3/5</p>
+                    <p>Review: Decent phone for the price, but camera quality is average.</p>
+                    <a href="mailto:davidwilson@gmail.com">Send Email</a>
+                    <a href="tel:+8765432109">Call Us</a>
+                </div>
+                <div class="review-card">
+                    <div class="reviewer-info">
+                        <img src="{{ u5 }}" alt="User Avatar" class="review-avatar">
+                        <h3>Sai Naidu</h3>
+                    </div>
+                    <p>Rating: 4/5</p>
+                    <p>Review: The Samsung S14 is a good mid-range phone. It offers a nice balance between price and performance. The camera quality is decent, and the battery life lasts throughout the day with regular usage. I've been happy with my purchase.</p>
+                    <a href="mailto:lisabrown@gmail.com">Send Email</a>
+                    <a href="tel:+1234567890">Call Us</a>
+                </div>
+                
+                
+               
+            </div>
+        </div>
+        <h3> more detailed review on the product</h3>
+        <div class="review-card">
+            <div class="reviewer-info">
+                <img src="{{ u1 }}" alt="User Avatar" class="review-avatar">
+                <h3>Paila Teja</h3>
+            </div>
+            <p>Rating: 5/5</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+            <p>Date: October 15, 2023</p>
+            <p>Review:</p>
+            <p>
+                I recently purchased this  Mobile and have been using it for the past month. Overall, I'm quite satisfied with my purchase. Here are my thoughts on this mobile product:
+            </p>
+            <ul>
+                <li><strong>Design and Build:</strong> The phone has a sleek and modern design, and it feels sturdy in hand. I love the slim profile and the quality of materials used.</li>
+                <li><strong>Performance:</strong> This Mobile is impressively fast and responsive. Apps open quickly, and multitasking is a breeze thanks to the powerful processor.</li>
+                <li><strong>Display:</strong> The display is sharp and vibrant, making videos and games enjoyable. The colors are accurate, and the brightness is more than sufficient, even in bright sunlight.</li>
+                <li><strong>Camera:</strong> The camera quality is good, especially in well-lit conditions. It captures detailed photos, and the various camera modes are fun to experiment with.</li>
+                <li><strong>Battery Life:</strong> The battery life is decent. It easily lasts a full day with moderate usage, but heavy users might need to charge it in the evening.</li>
+                <li><strong>Software:</strong> The software is clean and user-friendly. I appreciate the lack of bloatware and the regular software updates.</li>
+            </ul>
+            <p>Overall, this Mobile offers great value for the price. While it may not have all the features of premium flagship phones, it performs admirably for everyday use. I would recommend it to anyone looking for a reliable and budget-friendly mobile device.</p>
+        </div>
+        <div class="review-card">
+            <div class="reviewer-info">
+                <img src="{{ u2 }}" alt="User Avatar" class="review-avatar">
+                <h3>Jawahar Naidu</h3>
+            </div>
+            <p>Rating: 4/5</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <p>Date: November 3, 2023</p>
+            <p>Review:</p>
+            <p>
+                I recently purchased this Mobile and have been using it for the past few weeks. Here are my thoughts on this mobile product:
+            </p>
+            <ul>
+                <li><strong>Design and Build:</strong> The phone's design is elegant and modern, and it feels comfortable in hand. The build quality is impressive.</li>
+                <li><strong>Performance:</strong> This mobile is quite responsive and handles multitasking smoothly. The processor does a good job in delivering fast performance.</li>
+                <li><strong>Display:</strong> The display is vivid and sharp, making it a joy to watch videos and play games. The colors are accurate, and it remains visible even in bright sunlight.</li>
+                <li><strong>Camera:</strong> The camera performs well, especially in well-lit conditions. It captures detailed photos with ease, and the camera features are fun to explore.</li>
+                <li><strong>Battery Life:</strong> The battery life is decent, providing a full day of usage on a single charge. Heavy users might require an evening top-up.</li>
+                <li><strong>Software:</strong> The software is user-friendly, and I appreciate the clean interface and regular software updates.</li>
+            </ul>
+            <p>This Mobile offers great value for its price range. It might lack some high-end features, but for everyday use, it's a reliable and budget-friendly choice.</p>
+        </div>
+        <div class="review-card">
+            <div class="reviewer-info">
+                <img src="{{ u3 }}" alt="User Avatar" class="review-avatar">
+                <h3>Tagore</h3>
+            </div>
+            <p>Rating: 4/5</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+            </svg>
+            <p>Date: November 5, 2023</p>
+            <p>Review:</p>
+            <p>
+                I've had this Mobile for a while now, and I'm quite pleased with my purchase. Let me share my experience with this mobile product:
+            </p>
+            <ul>
+                <li><strong>Design and Build:</strong> The phone's design is sleek and stylish. It's comfortable to hold, and the build quality is solid.</li>
+                <li><strong>Performance:</strong> This mobile handles tasks smoothly. The speedy processor ensures a responsive experience, and apps open quickly.</li>
+                <li><strong>Display:</strong> The display is crisp and vibrant, making it perfect for multimedia. It delivers accurate colors and remains visible in various lighting conditions.</li>
+                <li><strong>Camera:</strong> The camera performs well, especially in well-lit environments. It captures detailed photos, and the camera features add versatility.</li>
+                <li><strong>Battery Life:</strong> The battery life is good, lasting a full day with ease. Even heavy users will find it reliable for their daily needs.</li>
+                <li><strong>Software:</strong> The user-friendly software is a delight to use, free from bloatware and with regular software updates.</li>
+                <li><strong>Storage:</strong> With ample storage space, you can store a significant amount of apps, photos, and files without any worries.</li>
+                <li><strong>Connectivity:</strong> It offers fast and stable connectivity with 4G and Wi-Fi, ensuring smooth internet access and call quality.</li>
+            </ul>
+            <p>This Mobile offers great value for its price, catering to both style and performance. If you're looking for a reliable and budget-friendly mobile device, I highly recommend it.</p>
+        </div>
+        
+       
+
+       
+    </div>
+    <div class="container mt-5">
+        <h1>Product Reviews</h1>
+
+        
+        <div class="comparison-section">
+            <h2 class="comparison-title">Compare with Other Websites</h2>
+            <ul class="comparison-list">
+                <li>
+                    <strong>Amazon:</strong>
+                    <a href="https://www.amazon.in/Redmi-Note-10S-Frost-Storage/dp/B09MKNX29Z/ref=sr_1_1?crid=294TIUV7O2Q28&keywords=redmi+note+10s&qid=1699243865&sprefix=redmi+note+10s%2Caps%2C317&sr=8-1" target="_blank">Visit Amazon</a>
+                    <img src="{{ amazon }}" alt="Amazon Icon" width="50" height="30">
+                </li>
+                <li>
+                    <strong>Flipkart:</strong>
+                    <a href="https://www.flipkart.com/redmi-note-10s-deep-sea-blue-64-gb/p/itmdd3b943d713b8?pid=MOBGAHD8GWKMFWFG&lid=LSTMOBGAHD8GWKMFWFGQXE9RS&marketplace=FLIPKART&q=redmi++note+10s&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=29e6281d-4322-428e-827b-0780a0c003cd.MOBGAHD8GWKMFWFG.SEARCH&ppt=hp&ppn=homepage&ssid=m2lhphi1hc0000001699244025338&qH=a052d6c46845133c" target="_blank">Visit Flipkart</a>
+                    <img src="{{ flipkart }}" alt="Flipkart Icon" width="50" height="30">
+                </li>
+                <li>
+                    <strong>Snapdeal:</strong>
+                    <a href="https://www.walmart.com/ip/Xiaomi-Redmi-Note-10-5G-128GB-4GB-RAM-6-5-Display-MediaTek-MT6833-Dimensity-700-5G-Cipset-000-mAh-Battyer-Global-Version-Nighttime-Blue/776066631?from=/search" target="_blank">Visit Snapdeal</a>
+                    <img src="{{ snapdeal }}" alt="Snapdeal Icon" width="50" height="30">
+                </li>
+                <li>
+                    <strong>Myntra:</strong>
+                    <a href="https://www.myntra.com" target="_blank">Visit Myntra</a>
+                    <img src="{{ myntra }}" alt="Myntra Icon" width="50" height="30">
+                </li>
+                <li>
+                    <strong>Shopclues:</strong>
+                    <a href="https://www.shopclues.com" target="_blank">Visit Shopclues</a>
+                    <img src="{{ shopclues }}" alt="Shopclues Icon" width="50" height="30">
+                </li>
+            </ul>
+        </div>
+       
+    <div class="container mt-5">
+    
+
+        <div class="best-section">
+            <h2 class="best-title">choosing the best among those websites</h2>
+            <ul class="best-list">
+               
+                <li id="flipkartInfo">
+                    <strong>Flipkart:</strong>
+                    <a href="https://www.flipkart.com/redmi-note-10s-deep-sea-blue-64-gb/p/itmdd3b943d713b8?pid=MOBGAHD8GWKMFWFG&lid=LSTMOBGAHD8GWKMFWFGQXE9RS&marketplace=FLIPKART&q=redmi++note+10s&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=29e6281d-4322-428e-827b-0780a0c003cd.MOBGAHD8GWKMFWFG.SEARCH&ppt=hp&ppn=homepage&ssid=m2lhphi1hc0000001699244025338&qH=a052d6c46845133c" target="_blank">Visit Flipkart</a>
+                    <img src="{{ flipkart }}" alt="Flipkart Icon" width="50" height="30">
+                </li>
+                <li id="bestReview">
+                    <strong>Best Review:</strong>
+                </li>
+            </ul>
+            <div id="productInfo">
+                <h2>Product Information</h2>
+               <!-- <img src="C:\Users\TUF\OneDrive\Pictures\1609417280_SamsungGalaxyS20Ultra.jpg" alt="Product Image" class="product-img"> -->
+                <h3>Product Name: Samsung S14</h3>
+                <p>Price: $587.09</p>
+                <h3>Advantages:</h3>
+                <ul>
+                    <li>High-quality materials</li>
+                    <li>Fast and responsive performance</li>
+                    <li>Sharp and vibrant display</li>
+                </ul>
+                <h3>Disadvantages:</h3>
+                <ul>
+                    <li>Decent battery life</li>
+                    <li>May not have all premium features</li>
+                </ul>
+            </div>
+            <div id="compareSection">
+                <h2>Compare Similar Products</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Specification</th>
+                            <th>Samsung S14 (Flipkart)</th>
+                            <th>Samsung S14 (Amazon)</th>
+                            <th>Samsung S14 (Snapdeal)</th>
+                            <th>Samsung S14 (Myntra)</th>
+                            <th>Samsung S14 (Shopclues)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Display Size</td>
+                            <td>6.4 inches</td>
+                            <td>6.4 inches</td>
+                            <td>6.4 inches</td>
+                            <td>6.4 inches</td>
+                            <td>6.4 inches</td>
+                        </tr>
+                        <tr>
+                            <td>Processor</td>
+                            <td>Octa-core</td>
+                            <td>Octa-core</td>
+                            <td>Octa-core</td>
+                            <td>Octa-core</td>
+                            <td>Octa-core</td>
+                        </tr>
+                        <tr>
+                            <td>RAM</td>
+                            <td>6 GB</td>
+                            <td>6 GB</td>
+                            <td>6 GB</td>
+                            <td>6 GB</td>
+                            <td>6 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Storage</td>
+                            <td>128 GB</td>
+                            <td>128 GB</td>
+                            <td>128 GB</td>
+                            <td>128 GB</td>
+                            <td>128 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Network Type</td>
+                            <td>4G</td>
+                            <td>4G</td>
+                            <td>4G</td>
+                            <td>4G</td>
+                            <td>4G</td>
+                        </tr>
+                        <tr>
+                            <td>SIM Type</td>
+                            <td>Nano SIM</td>
+                            <td>Nano SIM</td>
+                            <td>Nano SIM</td>
+                            <td>Nano SIM</td>
+                            <td>Nano SIM</td>
+                        </tr>
+                        <tr>
+                            <td>Expandable Storage</td>
+                            <td>MicroSD, up to 256 GB</td>
+                            <td>MicroSD, up to 256 GB</td>
+                            <td>MicroSD, up to 256 GB</td>
+                            <td>MicroSD, up to 256 GB</td>
+                            <td>MicroSD, up to 256 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Quick Charging</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                            <td>Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Warranty</td>
+                            <td>2 Year</td>
+                            <td>1 Year</td>
+                            <td>2 Year</td>
+                            <td>1 Year</td>
+                            <td>1 Year</td>
+                        </tr>
+                        <tr>
+                            <td>Best Price</td>
+                            <td>$547.09</td>
+                            <td>$599.99</td>
+                            <td>$579.95</td>
+                            <td>$609.00</td>
+                            <td>$575.50</td>
+                        </tr>
+                        <tr>
+                            <td>Additional Offers</td>
+                            <td>20% cashback,free headphones</td>
+                            <td>Free screen protector</td>
+                            <td>15% discount</td>
+                            <td>Free headphones</td>
+                            <td>5% cashback</td>
+                        </tr>
+                        <tr>
+                            <td>Seller Rating</td>
+                            <td>4.7 (12565 reviews)</td>
+                            <td>4.5 (3421 reviews)</td>
+                            <td>4.6 (1987 reviews)</td>
+                            <td>4.4 (1762 reviews)</td>
+                            <td>4.2 (3073 reviews)</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping & Delivery</td>
+                            <td>2-3 business days, free shipping</td>
+                            <td>Free shipping, 4-5 business days,$5.00</td>
+                            <td>3-4 business days, $4.99</td>
+                            <td>Free shipping, 5-6 business days</td>
+                            <td>2-3 business days, $6.50</td>
+                        </tr>
+                        <tr>
+                            <td>Customer Service</td>
+                            <td>24/7 support, chat, email, phone</td>
+                            <td>24/7 support, chat</td>
+                            <td>Support during business hours</td>
+                            <td>24/7 support, email</td>
+                            <td>support during business days, phone</td>
+                        </tr>
+                        <!-- Add more rows for other specifications -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+              
+
+    <script>
+        function compareReviews() {
+            
+            const flipkartReviewURL = 'https://api.example.com/flipkart-review'; // Replace with the actual Flipkart review API URL
+
+           
+
+            // Fetch reviews from Flipkart
+            fetch(flipkartReviewURL)
+                .then(response => response.json())
+                .then(data => {
+                    const flipkartReview = data.review;
+                    document.getElementById('flipkartInfo').innerHTML += ` - Review: ${flipkartReview}`;
+                    // Compare and display the best review
+                    compareAndDisplayBestReview(flipkartReview, 'Flipkart');
+                })
+                .catch(error => console.error('Error fetching Flipkart review:', error));
+        }
+
+        // Function to compare reviews and display the best review
+        function compareAndDisplayBestReview(review, site) {
+            const bestReviewElement = document.getElementById('bestReview');
+            if (!bestReviewElement.dataset.bestReview || review.length > bestReviewElement.dataset.bestReview.length) {
+                bestReviewElement.dataset.bestReview = review;
+                bestReviewElement.textContent = `Best Review (from ${site}): ${review}`;
+            }
+        }
+
+        // Call the compareReviews function to display reviews
+        compareReviews();
+    </script>
+    </div>
+    <br>
+    <br>
+    <form action="/chat" method="post">
+ <div class="card">
+    <h3 style="color:blueviolet">For Further Information Chat with random Information</h3>
+    <button  class="btn btn-success ">CHAT</button>
+ </div>
+</form>
+<br>
+<br>
+
+  
+    <div class="col-md-6">
+        <h2>Add Your Review</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="rating">Rating</label>
+                <select class="form-control" id="rating">
+                    <option value="5">5 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="2">2 stars</option>
+                    <option value="1">1 star</option>
+                </select>
+            </div>
+            <div class="form-group">
+                
+                <label for="EMAIL">ENTER YOUR EMAIL</label>
+                <textarea class="form-control" id="EMAIL" rows="1" placeholder="Your EMAIL"></textarea>
+                <label for="review">Review</label>
+                <textarea class="form-control" id="review" rows="3" placeholder="Your Review"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+    </div>
+</div>
+</div> 
+</body>
+</html>
